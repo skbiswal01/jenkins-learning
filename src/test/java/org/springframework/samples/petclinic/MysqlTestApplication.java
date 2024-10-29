@@ -41,7 +41,6 @@ public class MysqlTestApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PetClinicApplication.class, "--spring.profiles.active=mysql");
-		//start of tests
 	}
 
 }
