@@ -2,15 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage("Checkout") {
-            steps {
-                script {
-                    sh "ls"  // Lists the initial files in the workspace (if any)
-                    git branch: 'main', url: 'https://github.com/skbiswal01/jenkins-learning.git'
-                    sh "ls"  // Lists files again, showing the contents of the repository after checkout
-                }
-            }
-        }
 
         stage("Build") {
             steps {
